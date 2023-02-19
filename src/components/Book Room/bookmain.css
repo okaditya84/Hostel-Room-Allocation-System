@@ -1,0 +1,62 @@
+/* .room{
+    padding: 200px;
+    text-align: center;
+}
+
+.roomStatus , .bookRoom{
+    margin: 10px;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border-color: black;
+    cursor: pointer;
+    background-color: rgb(233, 231, 231);
+    color: rgb(82, 105, 209);
+    font-weight: 700;
+}
+
+.roomStatus:hover , .bookRoom:hover{
+    background-color: rgb(82, 105, 209);
+    color: aliceblue;
+} */
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .options:last-child {
+    margin-bottom: 0;
+  }
+  
+  button {
+    background-color: #008CBA;
+    color: white;
+    font-size: 24px;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 0 16px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #004366;
+  }
+  

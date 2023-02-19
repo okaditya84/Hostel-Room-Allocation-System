@@ -1,0 +1,82 @@
+/* .rooms{
+    height: 20px;
+    width: 35px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.floor{
+    display: flex;
+    list-style: none;
+    margin: 0px 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+
+.eachFloor{
+    font-family: 'Poppins', sans-serif;
+} */
+
+/* Main container for the layout */
+.layout-container {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    font-weight: 800;
+  }
+  
+  /* First column */
+  .column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Second column */
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Room list */
+  .room-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Each room item */
+  .room-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    width: 200px;
+  }
+  
+  /* Room number */
+  .room-number {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  /* Room status indicator */
+  .room-status {
+    border: 1px solid black;
+    height: 20px;
+    width: 30px;
+  }
+  
+  /* Navigation bar */
+  

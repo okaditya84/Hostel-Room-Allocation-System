@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+.material-symbols-outlined {
+  padding-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+  
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    border-radius: 10px;
+    background-color: rgb(74, 97, 230);
+    color: rgb(228, 224, 224);
+  }
+  
+  .brand-name {
+    text-decoration: none;
+    color: rgb(228, 224, 224);
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    pointer-events: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1.2rem;
+    padding: 0 20px;
+  }
+  
+  .navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: rgb(228, 224, 224);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .navigation-menu li:hover{
+    background-color: #424da8;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(74, 97, 230);
+    color: rgb(228, 224, 224);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  .hamburger:hover {
+    border-radius: 50%;
+    background-color: rgb(118, 136, 236);
+  }
+  
+  @media screen and (max-width: 550px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 60px);
+      background-color: white;
+      border-top: 1px solid black;
+      display: none;
+      z-index: 1;
+    }
+  
+    .navigation-menu li {
+      border: 1 black;
+      text-align: center;
+      margin: 0;
+    }
+  
+    .navigation-menu li a {
+      color: black;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+  
+    .navigation-menu li:hover {
+      background-color: rgb(82, 105, 209);
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+  }
+  
