@@ -18,7 +18,7 @@ const BookRoomForRandom = () => {
   }
 
   const sendRequest = async()=>{
-    const res=await axios.post("http://localhost:3000/api/v1/allocateOne",{
+    const res=await axios.post("https://dotslash-svnit-production.up.railway.app/api/v1/allocateOne",{
       name:String(person.fullName),
       rollNo:String(person.rollNo),
       transactionId:String(person.transId),

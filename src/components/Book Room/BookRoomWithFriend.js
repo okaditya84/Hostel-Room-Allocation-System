@@ -16,7 +16,7 @@ const BookRoomWithFriend = () => {
     }
   
     const sendRequest = async()=>{
-        const res=await axios.post("http://localhost:3000/api/v1/allocateTwo",([
+        const res=await axios.post("https://dotslash-svnit-production.up.railway.app/api/v1/allocateTwo",([
           {
             name:String(person.fullName1),
             rollNo:String(person.rollNo1),

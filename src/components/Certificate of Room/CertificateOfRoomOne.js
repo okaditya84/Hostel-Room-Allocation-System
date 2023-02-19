@@ -15,7 +15,7 @@ const CertificateOfRoomOne = () => {
     const [person,setPerson]=useState({});
 
     const sendRequest = async()=>{
-      const res = await axios.get(`http://localhost:3000/api/v1/${id}`).catch((err)=>console.log(err));
+      const res = await axios.get(`https://dotslash-svnit-production.up.railway.app/api/v1/${id}`).catch((err)=>console.log(err));
       const data=await res.data;
       return data;
     }

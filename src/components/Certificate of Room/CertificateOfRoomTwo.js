@@ -20,13 +20,13 @@ const CertificateOfRoomTwo = () => {
     const [person2,setPerson2]=useState({});
 
     const sendRequest1 = async()=>{
-      const res = await axios.get(`http://localhost:3000/api/v1/${id1}`).catch((err)=>console.log(err));
+      const res = await axios.get(`https://dotslash-svnit-production.up.railway.app/api/v1/${id1}`).catch((err)=>console.log(err));
       const data=await res.data;
       return data;
     }
 
     const sendRequest2 = async()=>{
-        const res = await axios.get(`http://localhost:3000/api/v1/${id2}`).catch((err)=>console.log(err));
+        const res = await axios.get(`https://dotslash-svnit-production.up.railway.app/api/v1/${id2}`).catch((err)=>console.log(err));
         const data=await res.data;
         return data;
       }
